@@ -15,11 +15,21 @@
         }
         h1 {
             font-size: 48px;
-            color: #333;
+            color: blue;
+            opacity: 0; /* start invisible */
+            transform: translateX(-100px); /* start off to the left */
+            animation: slideIn 2s forwards; /* animate for 2 seconds */
+        }
+
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateX(0); /* move to original position */
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Sandip Kunwar</h1>
+    <h1>Hi, I'm Sandip</h1>
 </body>
 </html>
