@@ -123,3 +123,123 @@ nav ul.nav-right li a.active {
     box-shadow: 0 8px 20px rgba(102,51,153,0.35);
 }
 
+/* Mail section in the about page */
+.contact-mail {
+    text-align: left;
+    margin-left: 10px;
+    margin: 80px 0 40px 0;
+    font-size: 18px;
+    font-weight: 20%;
+    color:#663399;
+}
+.contact-mail a {
+    color: #663399;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-mail a:hover {
+    text-decoration: underline;
+}
+
+/* Academic Journey Timeline */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 60px auto 40px auto;
+    z-index: 0;
+}
+.container {
+    padding: 10px 40px;
+    position: relative;
+    width: 38%;
+    border-radius: 8px;
+    z-index: 2;
+}
+.text-box {
+    padding: 20px 30px;
+    background:lavenderblush;
+    position: relative;
+    border-radius: 10px;
+    font-size: 15px;
+    border-style:groove;
+    line-height: 1.6;
+}
+.text-box p{
+    margin: 6px 0;
+}
+
+.left-container {
+    left: 6.2%;
+}
+
+.right-container {
+    left: 50%;
+}
+
+.container img {
+    position: absolute;
+    width: 60px;
+    height: 55px;
+    border-radius:50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.right-container img{
+    left: -27px
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #663399;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    border:black;
+    z-index: 1;
+    animation: moveline 3s linear forwards;
+}
+@keyframes moveline {
+    0%{
+        height:0;
+    }
+    100% {
+        height: 100%;
+    }
+
+}
+.text-box h2 {
+    font-weight: 600;
+}
+.text-box span{
+    font-style: oblique;
+}
+
+.left-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid #fff;
+    right: -8px;
+}
+
+.right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 12px solid #fff;
+    left: -10px;
+}
