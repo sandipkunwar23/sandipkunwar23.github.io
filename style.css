@@ -1,0 +1,125 @@
+/* Body style */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #F0EBFF;  /* light purple background */
+    margin: 0;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: flex-end; /* Align items right */
+    padding: 20px 50px;
+    background: linear-gradient(to bottom, rgba(245,242,255,0.9), rgba(245,242,255,0.6));
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Nav links (right-aligned row) */
+nav ul.nav-right {
+    display: flex;
+    flex-direction: row-reverse; /* Items appear right-to-left */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 19px;
+}
+
+nav ul.nav-right li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 19px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav ul.nav-right li a:hover,
+nav ul.nav-right li a.active {
+    font-weight: 700;
+    color: #663399; /* highlight color */
+}
+
+/* Sections */
+.section {
+    padding: 100px 50px;       /* spacing inside section */
+    scroll-margin-top: 100px;  /* offset for sticky nav */
+}
+
+/* Home section typing animation */
+.home h1 {
+    font-size: 25px;
+    color: #663399;
+    text-align: center;
+    border-right: 3px solid #663399; /* cursor effect */
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 3s steps(18, end) forwards, blink 0.7s step-end infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 195px; } /* adjust to text length */
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* Headings inside other sections */
+.section h2 {
+    color: #663399;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Paragraphs inside sections */
+.section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* About page layout */
+.about-section {
+    display: flex;
+    justify-content: flex-end;   /* move content to right */
+}
+
+.about-content {
+    max-width: 600px;           /* readable width */
+}
+
+/* Social profile icons */
+.social-links {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 27px;
+    align-items: center;
+}
+
+.social-links img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* circular profile look */
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(102,51,153,0.35);
+}
+
