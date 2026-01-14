@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <title>About</title>
+    <title>Sandip Kunwar</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- Favicon-->
+    <link rel="icon" href="assets\SK3Dfavicon.png">
+    <link rel="apple-touch-icon" href="assets/SK3Dfavicon.png">
 </head>
 <body>
     <nav>
         <ul class="nav-right">
-            <li><a href="#search">🔎</a></li>
+            <li class ="search wrapper">
+                <a id="search-icon">🔎</a>
+                <input type="text" id ="search-input" placeholder="Search..."/>
+            </li>
             <li><a href="about.html" class="active">About</a></li>
             <li><a href="spaces.html">Spaces</a></li>
             <li><a href="art.html">Art</a></li>
@@ -20,25 +26,27 @@
     <section class="section about-section">
         <div class="about-content">
             <h2>About Me</h2>
-            <p>Hi, my name is Sandip. I graduated from Institue of Engineering, Pulchowk, Tribuvan University with a B.E. in Mechanical Engineering in 2025.</p>
+            <p>Hi, my name is Sandip. I graduated from Institute of Engineering, Pulchowk, Tribuvan University with a B.E. in Mechanical Engineering in 2025.</p>
             <p>This is my personal website where I share my work and much more.</p>
 
             <div class="social-links">
                 <a href = "https://www.linkedin.com/in/sandip-kunwar-a172851a7/" target="_blank">
                     <img src="assets\linkedin-black-icon-logo-png_seeklogo-387472.png" alt="LinkedIn">
                 </a>
-
-                <a href="https://www.youtube.com/@sandipkunwar5062" target="_blank">
-                    <img src = "assets\Paths-of-Glory-1957-Pictures.png" alt="YouTube">
+                <a href = "https://github.com/sandipkunwar23" target="_blank">
+                    <img src="assets\github2.png">
                 </a>
             </div>
         </div>
     </section>
+    <hr class="section-divider">
+
 
     <div class="contact-mail"> 
-        <p> Mail: <a href:"mailto:sandipkunwar2203@gmail.com">sandipkunwar2203@gmail.com</a></p>
+        <p><a href="mailto:sandipkunwar2203@gmail.com">sandipkunwar2203@gmail.com</a></p>
     </div>
 
+    <script src="search.js"></script>
 </body>
 
 </html>
