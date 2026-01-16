@@ -290,6 +290,121 @@ nav ul.nav-right li a.active {
     left: -10px;
 }
 
+/* Portfolio section */
+.portfolio {
+    max-width: 1200px;
+    margin: 120px auto;
+    padding: 0 40px;
+}
+
+.portfolio-title {
+    font-size: 35px;
+    font-weight: 500px;
+    margin-bottom: 40px;
+    color: #151317;
+    margin-left: 510px;
+    margin-bottom: 40px;
+
+}
+
+/* Project row */
+.projects {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Individual card */
+.project-card {
+    width: 525px;
+    height: 450px;
+    background: #ebecee;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 35px rgba(0,0,0,0.18);
+}
+
+/* Image */
+.project-images {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.project-images img {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 75px;
+    height: auto;
+    object-fit:inherit;
+    border-radius: 8px;
+    flex: 1;
+}
+
+/* Text */
+.project-info {
+    padding: 18px 20px 22px;
+}
+
+.project-info h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #151218;
+}
+
+.project-info p {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 16px;
+}
+
+/* Link */
+.project-link {
+    font-weight: 600;
+    color: #663399;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+.project-btn {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 150px;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    color: #040305;
+    border: 2px solid #0e0a13;
+    background: transparent;
+    text-decoration: none;
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
+}
+
+.project-btn:hover {
+    background: #1313127d;
+    color: #e8e3e8;
+    transform: translateY(-2px);
+}
+
+
+
+
+
 /* ART SECTION */
 
 .video-section {
