@@ -1,8 +1,9 @@
 /* Body style */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background: #F0EBFF;  /* light purple background */
     margin: 0;
+    font-size: 25px;
 }
 
 /* Smooth scrolling for anchor links */
@@ -57,20 +58,21 @@ nav ul.nav-right li a.active {
 
 /* Home section typing animation */
 .home h1 {
-    font-size: 25px;
-    color: #663399;
+    font-size: 50px;
+    font-family:initial;
+    color:darkviolet;
     text-align: center;
     border-right: 3px solid #663399; /* cursor effect */
     white-space: nowrap;
     overflow: hidden;
     width: 0;
-    animation: typing 3s steps(18, end) forwards, blink 0.7s step-end infinite;
+    animation: typing 3s steps(25, end) forwards, blink 0.5s step-end infinite;
 }
 
 /* Typing animation */
 @keyframes typing {
     from { width: 0; }
-    to { width: 195px; } /* adjust to text length */
+    to { width: 355px; } /* adjust to text length */
 }
 
 @keyframes blink {
@@ -119,6 +121,115 @@ nav ul.nav-right li a.active {
     opacity: 1;
 }
 
+/*skills section */
+.skills {
+    margin-top: 50%;
+    background: #fffaf0;
+    padding: 5 px;
+    margin: 120px auto;
+    width: 100%;
+}
+
+.skills-title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #000;
+    letter-spacing: 2px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills-card {
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.skills-card:not(:last-child) {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.skills-icon {
+    width: 90px;
+    height: auto;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.skills-card h3 {
+    font-size: 25px;
+    font-weight: 400px;
+    margin-bottom: 15px;
+}
+
+.skills-card p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 10;
+    color: #444;
+}
+
+/* FOOTER */
+/* FOOTER */
+
+.site-footer {
+    margin-top: 120px;
+    padding: 40px 60px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+/* Mail on left */
+.footer-left a {
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Center icons */
+.footer-center {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer-center img {
+    width: 40px;
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.footer-center img:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-left {
+        order: 2;
+    }
+
+    .footer-center {
+        order: 1;
+    }
+}
 
 
 
@@ -177,6 +288,7 @@ nav ul.nav-right li a.active {
     font-size: 18px;
     font-weight: 20%;
     color:#663399;
+    margin-left: 15px;
 }
 .contact-mail a {
     color: #663399;
@@ -317,15 +429,16 @@ nav ul.nav-right li a.active {
 /* Individual card */
 .project-card {
     width: 525px;
-    height: 450px;
+    height: 510px;
     background: #ebecee;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0,0,0,0.12);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
+    row-gap: 5px;
 }
 
 .project-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-6px);    
     box-shadow: 0 16px 35px rgba(0,0,0,0.18);
 }
 
@@ -333,14 +446,14 @@ nav ul.nav-right li a.active {
 .project-images {
     display: flex;
     gap: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .project-images img {
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 9px;
     margin-left: 10px;
-    width: 75px;
+    width: 95px;
     height: auto;
     object-fit:inherit;
     border-radius: 8px;
@@ -359,7 +472,7 @@ nav ul.nav-right li a.active {
 }
 
 .project-info p {
-    font-size: 14.5px;
+    font-size: 14px;
     line-height: 1.6;
     color: #444;
     margin-bottom: 16px;
@@ -400,9 +513,18 @@ nav ul.nav-right li a.active {
     color: #e8e3e8;
     transform: translateY(-2px);
 }
-
-
-
+.project-images2 img {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 230px;
+    height: 275px;
+    object-fit: inherit;
+    border-radius: 5px;
+    flex: 1;
+    column-gap: 5px;
+    row-gap: 5px;
+}
 
 
 /* ART SECTION */
