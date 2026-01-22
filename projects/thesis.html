@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sandip Kunwar</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- Favicon-->
+    <link rel="icon" href="../assets/SK3Dfavicon.png">
+    <link rel="apple-touch-icon" href="../assets/SK3Dfavicon.png">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="nav-right">
+            <li class ="search wrapper">
+                <a id="search-icon">🔎</a>
+                <input type="text" id ="search-input" placeholder="Search..."/>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="spaces.html">Spaces</a></li>
+            <li><a href="art.html">Art</a></li>
+            <li><a href="education.html" class = "active">Education</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <section class="project-page">
+        <div class="project-box">
+
+            <div class="project-gallery">
+                <button class="slider-btn left" onclick="prevSlide()">&#10094;</button>
+
+                <div class="slider-window">
+                    <img src="../assets/pafpside.jpg" class="slide active">
+                    <img src="../assets/structural-analysis.png" class="slide">
+                    <img src="../assets/backtest.png" class="slide">
+                    <img src = "../assets/Machining-3dprint.png" class="slide">
+                    <img src = "../assets/out-ansys.png" class="slide">
+                </div>
+
+                <button class="slider-btn right" onclick="nextSlide()">&#10095;</button>
+            </div>
+
+            <h1 class="project-title">
+                Development and Bench-top Validation of Active Ankle-Foot Prosthesis
+            </h1>
+
+            <a href="https://github.com/sandipkunwar23/Nepal-EV-Price-Prediction-"
+                target="_blank"
+                class="project-main-btn">
+                View Project & Code
+            </a>
+            
+            <a href = "https://drive.google.com/drive/u/3/folders/1nqxNuqbuk2VlbHUxBYNqflgV58B3zfaC"
+                target="_blank"
+                class = "project-main-btn">
+                Final Presentation
+            </a>
+        </div>
+    </section>
+    <script src = "../slider.js"></script>
+    <script src="../search.js"></script>
+</body>
