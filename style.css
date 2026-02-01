@@ -14,7 +14,7 @@ html {
 /* Navigation Bar */
 nav {
     display: flex;
-    justify-content: flex-end; /* Align items right */
+    justify-content: space-between; /* Align items right */
     padding: 20px 50px;
     background: linear-gradient(to bottom, rgba(245,242,255,0.9), rgba(245,242,255,0.6));
     backdrop-filter: blur(5px);
@@ -27,7 +27,7 @@ nav {
 /* Nav links (right-aligned row) */
 nav ul.nav-right {
     display: flex;
-    flex-direction: row-reverse; /* Items appear right-to-left */
+    flex-direction: row-reverse;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -49,6 +49,30 @@ nav ul.nav-right li a.active {
     font-weight: 700;
     color:#663399; /* highlight color */
 }
+
+/* Left name + degree */
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    line-height: 1.2;
+    align-items:first baseline;
+    gap: 120px;
+}
+
+.nav-name {
+    font-size: 27px;
+    font-weight: 700;
+    color: #151317;
+}
+
+.nav-degree {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    color: #663399;
+}
+
+
 
 /* Sections */
 .section {
